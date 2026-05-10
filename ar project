@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.js"></script>
+  </head>
+
+  <body style="margin:0; overflow:hidden;">
+
+    <a-scene embedded arjs>
+
+      <!-- Marker (T-shirt image) -->
+      <a-marker preset="hiro">
+
+        <!-- Text in AR -->
+        <a-text 
+          value="HELLO BRAND 🔥"
+          position="0 0 0"
+          color="white"
+          scale="2 2 2">
+        </a-text>
+
+      </a-marker>
+
+      <a-entity camera></a-entity>
+
+    </a-scene>
+
+  </body>
+</html>
